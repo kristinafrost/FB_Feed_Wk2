@@ -16,11 +16,12 @@
 
 
 - (void)feedLoad;
--(void)viewDidLayoutSubviews;
+- (void)viewDidLayoutSubviews;
 
 @end
 
 @implementation FeedViewController
+
 @synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,15 +37,9 @@
 {
     [super viewDidLoad];
     
-    //[self performSelector:@selector(feedLoad) withObject:nil afterDelay:2];
-    
     [self.scrollView setScrollEnabled:true];
-    [self.scrollView setContentSize:CGSizeMake(320, 500)];
     
     [self performSelector:@selector(feedLoad) withObject:nil afterDelay:2];
-   
-    
-    // Do any additional setup after loading the view from its nib.
  
     self.navigationItem.title = @"News Feed";
 }
