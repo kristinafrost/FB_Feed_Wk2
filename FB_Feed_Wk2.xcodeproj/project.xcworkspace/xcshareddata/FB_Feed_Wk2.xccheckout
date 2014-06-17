@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7FB00B64-F436-451B-8677-19E0F8E849E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FB_Feed_Wk2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8435981A-4CBC-47A8-86F2-26914495626E</key>
+		<string>https://github.com/kristinafrost/FB_Feed_Wk2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FB_Feed_Wk2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8435981A-4CBC-47A8-86F2-26914495626E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kristinafrost/FB_Feed_Wk2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8435981A-4CBC-47A8-86F2-26914495626E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8435981A-4CBC-47A8-86F2-26914495626E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FB_Feed_Wk2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

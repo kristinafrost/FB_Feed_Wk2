@@ -12,9 +12,10 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadIndicator;
 
 
-//- (void)feedLoad;
+- (void)feedLoad;
 -(void)viewDidLayoutSubviews;
 
 @end
@@ -37,7 +38,10 @@
     
     //[self performSelector:@selector(feedLoad) withObject:nil afterDelay:2];
     
+    [self.scrollView setScrollEnabled:true];
+    [self.scrollView setContentSize:CGSizeMake(320, 500)];
     
+    [self performSelector:@selector(feedLoad) withObject:nil afterDelay:2];
    
     
     // Do any additional setup after loading the view from its nib.
@@ -52,11 +56,14 @@
 }
 
 -(void)viewDidLayoutSubviews {
-    self.scrollView.contentSize = self.contentView.bounds.size;
+    self.scrollView.contentSize = self.contentView.frame.size;
 }
 
-//- (void)feedLoad {
-    //[self.loadIndicatorView stopAnimating];
+
+-(void)feedLoad {
+    NSLog(@"loading");
+    [self.loadIndicator stopAnimating];
+}
     
 //}
 

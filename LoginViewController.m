@@ -11,6 +11,7 @@
 #import "MoreViewController.h"
 
 @interface LoginViewController ()
+
 @property (weak, nonatomic) IBOutlet UIView *loginItems;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
@@ -174,8 +175,6 @@
     self.loginButton.enabled = false;
     
     //self.view.backgroundColor=[UIColor colorWithRed:0.301 green:0.427 blue:0.666 alpha:1.0];
-    
-    //([self.userName.text isEqualToString:@"password"]) {
     
     [self.view addSubview:self.loginItems];
 
