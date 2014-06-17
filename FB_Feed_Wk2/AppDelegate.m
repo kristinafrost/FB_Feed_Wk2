@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "FeedViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +16,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    LoginViewController *loginviewController = [[LoginViewController alloc] init];
+    self.window.rootViewController = loginviewController;
+    
+
     [self.window makeKeyAndVisible];
     return YES;
 }

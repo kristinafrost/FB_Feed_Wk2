@@ -13,12 +13,18 @@
 		44E4CFA3194CD25100D9FBB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44E4CFA1194CD25100D9FBB8 /* InfoPlist.strings */; };
 		44E4CFA5194CD25100D9FBB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4CFA4194CD25100D9FBB8 /* main.m */; };
 		44E4CFA9194CD25100D9FBB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4CFA8194CD25100D9FBB8 /* AppDelegate.m */; };
-		44E4CFAB194CD25100D9FBB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E4CFAA194CD25100D9FBB8 /* Images.xcassets */; };
 		44E4CFB2194CD25100D9FBB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4CFB1194CD25100D9FBB8 /* XCTest.framework */; };
 		44E4CFB3194CD25100D9FBB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4CF98194CD25100D9FBB8 /* Foundation.framework */; };
 		44E4CFB4194CD25100D9FBB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4CF9C194CD25100D9FBB8 /* UIKit.framework */; };
 		44E4CFBC194CD25100D9FBB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44E4CFBA194CD25100D9FBB8 /* InfoPlist.strings */; };
 		44E4CFBE194CD25100D9FBB8 /* FB_Feed_Wk2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4CFBD194CD25100D9FBB8 /* FB_Feed_Wk2Tests.m */; };
+		44E4CFCA194CD65000D9FBB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4CFC8194CD65000D9FBB8 /* LoginViewController.m */; };
+		44E4CFCB194CD65000D9FBB8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E4CFC9194CD65000D9FBB8 /* LoginViewController.xib */; };
+		44E4CFDC194FB3F600D9FBB8 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4CFDA194FB3F600D9FBB8 /* FeedViewController.m */; };
+		44E4CFDD194FB3F600D9FBB8 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E4CFDB194FB3F600D9FBB8 /* FeedViewController.xib */; };
+		44E4CFE1194FD73E00D9FBB8 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E4CFDF194FD73E00D9FBB8 /* MoreViewController.m */; };
+		44E4CFE2194FD73E00D9FBB8 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E4CFE0194FD73E00D9FBB8 /* MoreViewController.xib */; };
+		44EC5BF8195035C900E53E69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EC5BF7195035C900E53E69 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +48,21 @@
 		44E4CFA6194CD25100D9FBB8 /* FB_Feed_Wk2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FB_Feed_Wk2-Prefix.pch"; sourceTree = "<group>"; };
 		44E4CFA7194CD25100D9FBB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44E4CFA8194CD25100D9FBB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44E4CFAA194CD25100D9FBB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44E4CFB0194CD25100D9FBB8 /* FB_Feed_Wk2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FB_Feed_Wk2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E4CFB1194CD25100D9FBB8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44E4CFB9194CD25100D9FBB8 /* FB_Feed_Wk2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FB_Feed_Wk2Tests-Info.plist"; sourceTree = "<group>"; };
 		44E4CFBB194CD25100D9FBB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44E4CFBD194CD25100D9FBB8 /* FB_Feed_Wk2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FB_Feed_Wk2Tests.m; sourceTree = "<group>"; };
+		44E4CFC7194CD65000D9FBB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		44E4CFC8194CD65000D9FBB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		44E4CFC9194CD65000D9FBB8 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		44E4CFD9194FB3F600D9FBB8 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		44E4CFDA194FB3F600D9FBB8 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		44E4CFDB194FB3F600D9FBB8 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		44E4CFDE194FD73E00D9FBB8 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		44E4CFDF194FD73E00D9FBB8 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		44E4CFE0194FD73E00D9FBB8 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		44EC5BF7195035C900E53E69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +122,10 @@
 		44E4CF9E194CD25100D9FBB8 /* FB_Feed_Wk2 */ = {
 			isa = PBXGroup;
 			children = (
+				44E4CFD2194D3DE200D9FBB8 /* LoginView */,
 				44E4CFA7194CD25100D9FBB8 /* AppDelegate.h */,
 				44E4CFA8194CD25100D9FBB8 /* AppDelegate.m */,
-				44E4CFAA194CD25100D9FBB8 /* Images.xcassets */,
+				44EC5BF7195035C900E53E69 /* Images.xcassets */,
 				44E4CF9F194CD25100D9FBB8 /* Supporting Files */,
 			);
 			path = FB_Feed_Wk2;
@@ -142,6 +158,22 @@
 				44E4CFBA194CD25100D9FBB8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44E4CFD2194D3DE200D9FBB8 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				44E4CFC7194CD65000D9FBB8 /* LoginViewController.h */,
+				44E4CFC8194CD65000D9FBB8 /* LoginViewController.m */,
+				44E4CFC9194CD65000D9FBB8 /* LoginViewController.xib */,
+				44E4CFD9194FB3F600D9FBB8 /* FeedViewController.h */,
+				44E4CFDA194FB3F600D9FBB8 /* FeedViewController.m */,
+				44E4CFDB194FB3F600D9FBB8 /* FeedViewController.xib */,
+				44E4CFDE194FD73E00D9FBB8 /* MoreViewController.h */,
+				44E4CFDF194FD73E00D9FBB8 /* MoreViewController.m */,
+				44E4CFE0194FD73E00D9FBB8 /* MoreViewController.xib */,
+			);
+			name = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +223,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					44E4CF94194CD25100D9FBB8 = {
+						DevelopmentTeam = SR953WUVAH;
+					};
 					44E4CFAF194CD25100D9FBB8 = {
 						TestTargetID = 44E4CF94194CD25100D9FBB8;
 					};
@@ -219,8 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E4CFE2194FD73E00D9FBB8 /* MoreViewController.xib in Resources */,
+				44E4CFDD194FB3F600D9FBB8 /* FeedViewController.xib in Resources */,
 				44E4CFA3194CD25100D9FBB8 /* InfoPlist.strings in Resources */,
-				44E4CFAB194CD25100D9FBB8 /* Images.xcassets in Resources */,
+				44EC5BF8195035C900E53E69 /* Images.xcassets in Resources */,
+				44E4CFCB194CD65000D9FBB8 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44E4CFA9194CD25100D9FBB8 /* AppDelegate.m in Sources */,
+				44E4CFDC194FB3F600D9FBB8 /* FeedViewController.m in Sources */,
 				44E4CFA5194CD25100D9FBB8 /* main.m in Sources */,
+				44E4CFCA194CD65000D9FBB8 /* LoginViewController.m in Sources */,
+				44E4CFE1194FD73E00D9FBB8 /* MoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +398,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FB_Feed_Wk2/FB_Feed_Wk2-Prefix.pch";
 				INFOPLIST_FILE = "FB_Feed_Wk2/FB_Feed_Wk2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FB_Feed_Wk2/FB_Feed_Wk2-Prefix.pch";
 				INFOPLIST_FILE = "FB_Feed_Wk2/FB_Feed_Wk2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +484,7 @@
 				44E4CFC3194CD25100D9FBB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44E4CFC4194CD25100D9FBB8 /* Build configuration list for PBXNativeTarget "FB_Feed_Wk2Tests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +493,7 @@
 				44E4CFC6194CD25100D9FBB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
