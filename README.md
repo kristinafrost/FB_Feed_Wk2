@@ -4,7 +4,7 @@ Homework 2
 ###Facebook Login as second homework project for CodePath (http://thecodepath.com/iosfordesigners)
 
 * **How many hours did it take to complete?**
-  * 15
+  * 20
 * **Which required and optional stories have you completed?**
   * Facebook login page
     * :white_check_mark: Tapping in the UITextField repositions the elements, as shown in the screenshots.
