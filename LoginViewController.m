@@ -47,13 +47,9 @@
     [self.view endEditing:YES];
 }
 
-//- (IBAction)onLogin:(id)sender {
-    //[self.indicatorView startAnimating];
-//}
 
 - (IBAction)onPassword:(id)sender {
     if (self.userName.hasText){
-        NSLog(@"user name has text");
         self.loginButton.enabled = true;
     }
     else {
@@ -61,13 +57,11 @@
     }
 }
 
+//Show keyboard
 - (void)willShowKeyboard:(NSNotification *)notification {
     NSDictionary *userInfo = [notification userInfo];
     
-    //     [self.view addGestureRecognizer:self.tapRecognizer];
-    
-    // Get the keyboard height and width from the notification
-    // Size varies depending on OS, language, orientation
+
     CGSize kbSize = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     NSLog(@"Height: %f Width: %f", kbSize.height, kbSize.width);
     
@@ -87,6 +81,7 @@
                      completion:nil];
 }
 
+//Hide keyboard
 - (void)willHideKeyboard:(NSNotification *)notification {
     NSLog(@"Hiding keyboard");
     NSDictionary *userInfo = [notification userInfo];
@@ -111,57 +106,57 @@
     
 }
 
+//Log in with password
 - (IBAction)onLogin:(id)sender {
+    
+    [self.view endEditing:YES];
 
- 
+        if (true) {
+            [UIView animateWithDuration:0.3 animations:^{self.indicatorView.alpha = 1.0;}];
     
-    if (true) {
-        [UIView animateWithDuration:0.3 animations:^{self.indicatorView.alpha = 1.0;}];
-    
-        
-    UIButton *button = (UIButton*)sender;
-    button.selected = !button.isSelected;
-    [self.indicatorView startAnimating];
-        self.loginButton.enabled = true;
+        UIButton *button = (UIButton*)sender;
+            button.selected = !button.isSelected;
+            [self.indicatorView startAnimating];
+            self.loginButton.enabled = true;
     }
     
-    //timer
-    [self performSelector:@selector(validatePassword) withObject:nil afterDelay:2.0];
+        //timer
+        [self performSelector:@selector(validatePassword) withObject:nil afterDelay:2.0];
 }
 
+//Validate password
 - (void)validatePassword {
     if ([self.passwordTextField.text isEqualToString:@"password"]) {
         NSLog(@"correct password");
         
         
-        FeedViewController *feedVC = [[FeedViewController alloc] init];
-        //MoreViewController *moreVC = [[MoreViewController alloc] init];
-        
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:feedVC];
-       
+        //Tab bar controller
         UITabBarController *tabBarController = [[UITabBarController alloc] init];
         
+        //News Feed View with navigation
+        FeedViewController *feedVC = [[FeedViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:feedVC];
+
+        //More View with navigation
         MoreViewController *moreVC = [[MoreViewController alloc] init];
         UINavigationController *moreNavigationController = [[UINavigationController alloc] initWithRootViewController:moreVC];
         
-        tabBarController.viewControllers = @[navigationController, moreNavigationController];
+        //Transition and presenting the tab bar controller
+        navigationController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:tabBarController animated:YES completion:nil];
 
         
+        //Tab bars
         navigationController.tabBarItem.title = @"News Feed";
         navigationController.tabBarItem.image = [UIImage imageNamed:@"feed_tab_img"];
         moreNavigationController.tabBarItem.title = @"More";
         moreNavigationController.tabBarItem.image = [UIImage imageNamed:@"more_tab_img"];
-
         
-        //self.window.rootViewController = tabBarController;
-        
-        navigationController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:tabBarController animated:YES completion:nil];
-
-
-        
+        tabBarController.viewControllers = @[navigationController, moreNavigationController];
+  
     }
     
+    //If incorrect password is entered
     else {UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"The password you entered is incorrect. Please try again" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
         
@@ -171,20 +166,15 @@
         // reset the button
         self.loginButton.enabled = false;
         self.loginButton.selected = false;
-        
     }
-    
     
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
     self.loginButton.enabled = false;
-    
-    //self.view.backgroundColor=[UIColor colorWithRed:0.301 green:0.427 blue:0.666 alpha:1.0];
     
     [self.view addSubview:self.loginItems];
 
@@ -193,7 +183,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
