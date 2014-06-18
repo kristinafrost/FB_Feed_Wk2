@@ -141,7 +141,17 @@
        
         UITabBarController *tabBarController = [[UITabBarController alloc] init];
         
-        tabBarController.viewControllers = @[navigationController];
+        MoreViewController *moreVC = [[MoreViewController alloc] init];
+        UINavigationController *moreNavigationController = [[UINavigationController alloc] initWithRootViewController:moreVC];
+        
+        tabBarController.viewControllers = @[navigationController, moreNavigationController];
+
+        
+        navigationController.tabBarItem.title = @"News Feed";
+        navigationController.tabBarItem.image = [UIImage imageNamed:@"feed_tab_img"];
+        moreNavigationController.tabBarItem.title = @"More";
+        moreNavigationController.tabBarItem.image = [UIImage imageNamed:@"more_tab_img"];
+
         
         //self.window.rootViewController = tabBarController;
         
